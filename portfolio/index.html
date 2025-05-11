@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Meu portfólio</title>
+</head>
+
+<body>
+    <header class="container text-center">
+        <img src="img/avatar1.jpg" alt="avatar do Guilherme" class="rounded-circle" width="150" height="150"
+            srcset="">
+        <p class="lead">Eu sou Guilherme</p>
+        <img src="img/avatar2.jpg" alt="avatar do Felipe" class="rounded-circle" width="150" height="150"
+            srcset="">
+            <p class="lead">Eu sou Felipe</p>
+            <img src="img/avatar3.jpg" alt="avatar do Daniel" class="rounded-circle" width="150" height="150"
+            srcset="">
+        <p class="lead">Eu sou Daniel</p>
+        <h1>Nós fazemos projetos com Mblock</h1>
+        <p>Somos estudantes do Chico Mendes e fazemos alguns projetos de programação usando o site Mblock conectando em placas no estilo Arduino e etc...
+        </p>
+        <p>Nossas habilidades</p>
+        <div>
+            <p class="badge bg-secondary">Programação</p>
+            <p class="badge bg-secondary">Matemática</p>
+            <p class="badge bg-secondary">Mblock</p>
+            <p class="badge bg-secondary">Bagunça</p>
+        </div>
+    </header>
+    <main class="container mt-5">
+        <h2>Projetos já feitos</h2>
+        <div class="row">
+            <!-- Projeto 2 -->
+            <div class="col-md-4">
+
+                <div class="card">
+                    <img src="img/IMG_20250407_114357.jpg" class="card-img-top" alt="Imagem do projeto de biblioteca virtual">
+                    <div class="card-body">
+                        <h5 class="card-title">Automação de LED</h5>
+                        <p class="card-text">Este projeto é um trabalho onde fizemos a automação de um LED onde um botão é inserido e quando apertamos
+                        o botão ele desliga o LED e quando apertamos novamente o LED liga.
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+    <!-- Modal 2 -->
+    <div class="modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Automação de LED</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Este projeto é um trabalho onde fizemos a automação de um LED onde um botão é inserido e quando apertamos
+                        o botão ele desliga o LED e quando apertamos novamente o LED liga.
+                    </p>
+                    <p>No projeto foi inserido uma placa Arduino, 1 LED, 1 Protoboard, 4 Cabos jumper macho macho, 2 resistores, 1 botão</p>
+                    <p>Quando o programa começa, ele entra num laço "para sempre".
+
+Dentro desse laço, ele verifica se o botão foi pressionado.
+
+Se sim, ele espera o botão ser solto (pra não contar várias vezes o mesmo clique).
+
+Depois, ele soma 1 na variável chamada ligado.
+
+Se o valor da variável ligado for ímpar (ou seja, ligado x = 1), ele liga o LED.
+
+Se for par, ele desliga o LED.
+</p>
+<p>Guilherme ficou responsável pela montagem dos fios, LED e botão na placa, deixando tudo conectado certinho.</p>
+<p>Felipe organizou a apresentação, anotou as ideias e ajudou a testar tudo no final pra garantir que tava funcionando direitinho.</p>
+<p>Daniel cuidou da programação no mBlock, criando o código que faz o LED ligar e desligar quando aperta o botão.</p>
+                    <img src="img/IMG_20250407_114357 - Copia.jpg" class="img-fluid w-100"
+                        alt="Imagem representativa do projeto de uma biblioteca online">
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container py-5">
+        <h2>Entre em contato</h2>
+        <div>
+            <i class="bi bi-github"></i>
+            <a href="https://github.com/femascheti">GitHub</a>
+        </div>
+        <p class="my-5 text-center">© Copyright 2024. Produzido por Chiodi</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
